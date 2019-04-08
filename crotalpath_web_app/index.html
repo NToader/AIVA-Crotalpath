@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Crotalpath</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./vendor/tiff.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+<div class="d-flex flex-row justify-content-center align-items-center h-100 text-white">
+    <div id="side-bar">
+        <h1 class="display-3" style="font-family: 'Righteous', cursive;">CROTALPATH</h1>
+        <button id="file_upload_btn" class="btn btn-primary btn-file mb-5 m-3" style="flex: none;" onclick="upload()">
+            <em class="fas fa-search mr-2"></em><span>A&ntilde;adir im&aacute;genes</span>
+        </button>
+        <form action="/tasks" method="POST" id="upload_form" enctype="multipart/form-data">
+            <input type="file" name="file" id="upload_input" multiple style="display:none">
+            <input type="submit" id="submit_input" style="display:none"/>
+        </form>
+    </div>
+    <div class="gallery" id="main_content">
+        <div id="file_container">
+            <div id="file_list" class="pb-3 pt-3">
+                <div class="fa-3x">
+                    <em class="fas fa-circle-notch fa-spin text-dark"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

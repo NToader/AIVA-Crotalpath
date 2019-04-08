@@ -73,3 +73,52 @@ de la carpeta de este repositorio:
 ``` 
 python -m unittest discover -v crotalpath_core
 ```
+
+# Despliegue con Docker
+
+Para realizar el despliegue mediante Docker se debe instalar este programa,
+para ello consultar el siguiente enlace: https://www.docker.com/get-started
+
+## Linux
+### Instalación 
+Para instalar el sistema mediante Docker se deberá utilizar el siguiente comando desde la raíz del repositorio:
+```
+bash build.sh
+```
+### Ejecución
+Para ejecutar el contenedor Docker y, con ello, el sistema Crotalpath se debe ejecutar el 
+sigueinte comando:
+```
+bash start.sh
+```
+Una vez iniciado el contenedor Docker hay que navegar a la siguiente dirección para usar el sistema: 
+http://127.0.0.1:5000/index.html
+
+
+
+Para detener el servicio hay que ejecutar:
+```
+bash stop.sh
+```
+
+
+## Windows
+### Instalación 
+Para instalar el sistema mediante Docker se deberá utilizar el siguiente comando desde la raíz del repositorio:
+```
+build.bat
+```
+### Ejecución
+Para ejecutar el contenedor Docker y, con ello, el sistema Crotalpath se debe ejecutar el 
+siguiente comando:
+```
+start.bat
+```
+Una vez iniciado el contenedor Docker hay que navegar a la siguiente dirección para usar el sistema: 
+http://127.0.0.1:5000/index.html
+
+
+Para detener el servicio hay que ejecutar:
+```
+stop.bat
+```

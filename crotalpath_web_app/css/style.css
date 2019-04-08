@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    background-color: #1b1e21;
+}
+
+#file_list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#side-bar {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    border-right: 4px solid #007bff;
+    transition: all 0.4s;
+    z-index: 10001;
+    background-color: #1b1e21;
+    background-image: url("../images/bg_dark.png");
+    background-repeat: repeat;
+}
+
+.gallery {
+    position: absolute;
+    width: calc(100% - 500px);
+    height: 100vh;
+    left: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery > div {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card {
+    box-shadow: 0 5px 6px 2px #9a9a9a;
+}
+
+#file_container {
+    background-color: #eef3f8;
+    width: 100%;
+    background-image: url("../images/bg_light.png");
+    background-repeat: repeat;
+    background-position-x: 300px;
+}
